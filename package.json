@@ -1,0 +1,24 @@
+{
+    "name": "mc-puppet",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "yarn clean && tsc",
+        "dev": "yarn build && node .",
+        "watch": "nodemon",
+        "start": "tsc && node ."
+    },
+    "author": "blekekok",
+    "license": "ISC",
+    "dependencies": {
+        "@types/node": "^18.7.1",
+        "rimraf": "^3.0.2",
+        "tslib": "^2.4.0",
+        "typescript": "^4.7.4"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19"
+    }
+}

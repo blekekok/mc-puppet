@@ -57,4 +57,4 @@ puppet.on('request', (status: RequestType, res: Response) => {
     }
 });
 
-puppet.listen({ host: 'localhost', port: 25565 });
+puppet.listen({ host: '0.0.0.0', port: 25565 });
